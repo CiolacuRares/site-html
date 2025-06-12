@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAST RARTRANS - Transport Internațional</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #001d2e; color: white; padding: 20px; text-align: center; }
+    nav { background: #004060; color: white; display: flex; justify-content: center; gap: 20px; padding: 10px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .hero-video { position: relative; height: 500px; overflow: hidden; }
+    .hero-video video { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -1; }
+    .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); color: white; padding: 20px; z-index: 1; }
+    .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
+    .footer { background: #001d2e; color: white; text-align: center; padding: 20px; }
+    .lang-switch { text-align: right; padding: 10px 20px; }
+    .lang-switch a { margin-left: 10px; text-decoration: none; color: #004060; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="frt.png" alt="FAST RARTRANS" height="80">
+    <h1>FAST RARTRANS</h1>
+    <p>Transport Internațional | Express | Curierat Rapid</p>
+  </header>
+
+  <div class="lang-switch">
+    <a href="#">RO</a> | <a href="#en">EN</a> | <a href="#fr">FR</a>
+  </div>
+
+  <nav>
+    <a href="#acasa">Acasă</a>
+    <a href="#servicii">Servicii</a>
+    <a href="#despre">Despre Noi</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero-video">
+    <video autoplay muted loop>
+      <source src="video.mp4" type="video/mp4">
+      Video-ul nu poate fi redat.
+    </video>
+    <div class="hero-text">
+      <h2>Rapid, Sigur, Internațional</h2>
+      <p>Transporturi eficiente în toată Europa</p>
+    </div>
+  </div>
+
+  <section class="section" id="despre">
+    <h2>Despre FAST RARTRANS</h2>
+    <p>Cu o experiență solidă în domeniul transporturilor internaționale și curieratului express, FAST RARTRANS oferă servicii flexibile și eficiente adaptate nevoilor clienților din întreaga Europă. Indiferent dacă este vorba de transport marfă, livrări urgente sau soluții logistice personalizate, echipa noastră este gata să livreze la timp, de fiecare dată.</p>
+    <h2 id="en">About FAST RARTRANS</h2>
+    <p>With solid experience in international transport and express courier services, FAST RARTRANS offers fast, flexible and secure delivery solutions tailored to your needs. From freight transport to urgent deliveries, our dedicated team ensures your goods arrive safely and on time, every time.</p>
+    <h2 id="fr">À propos de FAST RARTRANS</h2>
+    <p>Forts d’une expérience significative dans le transport international et la messagerie express, nous proposons des solutions flexibles, rapides et sécurisées. Qu’il s’agisse de fret, de livraisons urgentes ou de services logistiques personnalisés, notre équipe est à votre disposition pour assurer des livraisons ponctuelles et efficaces.</p>
+  </section>
+
+  <section class="section" id="servicii">
+    <h2>Serviciile Noastre</h2>
+    <div class="services">
+      <div>
+        <h3>Transport Internațional</h3>
+        <p>Livrăm oriunde în Europa, rapid și sigur.</p>
+        <p><strong>EN:</strong> We deliver across Europe, fast and safe.</p>
+        <p><strong>FR:</strong> Livraison rapide et sécurisée dans toute l'Europe.</p>
+      </div>
+      <div>
+        <h3>Curierat Express</h3>
+        <p>Soluții rapide pentru livrări urgente door-to-door.</p>
+        <p><strong>EN:</strong> Fast solutions for urgent door-to-door deliveries.</p>
+        <p><strong>FR:</strong> Solutions rapides pour les livraisons urgentes porte-à-porte.</p>
+      </div>
+      <div>
+        <h3>Transport de Marfă</h3>
+        <p>Adaptat nevoilor tale comerciale, indiferent de volum.</p>
+        <p><strong>EN:</strong> Tailored to your business needs, regardless of volume.</p>
+        <p><strong>FR:</strong> Adapté à vos besoins commerciaux, quelle que soit la quantité.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contactează-ne</h2>
+    <h3>EN: Contact Us | FR: Contactez-nous</h3>
+    <form class="contact-form" action="mailto:office@fastrartrans.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Nume / Name / Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Mesajul tău / Your Message / Votre message" rows="5" required></textarea>
+      <button type="submit">Trimite / Send / Envoyer</button>
+    </form>
+    <p>Email: <a href="mailto:office@fastrartrans.com">office@fastrartrans.com</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 FAST RARTRANS. Toate drepturile rezervate. | All rights reserved | Tous droits réservés</p>
+  </footer>
+</body>
+</html>
